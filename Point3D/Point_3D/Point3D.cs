@@ -45,12 +45,17 @@ namespace Point_3D
             } 
         }
 
-        public static Point3D GetStart { get { return Point3D.startPoint; } }
+        public static Point3D GetStart
+        {
+            get 
+            {
+                return Point3D.startPoint;
+            }
+        }
 
         public override string ToString()
         {
             return "{" + this.X + "," + this.Y + "," + this.Z + "}";
         }
-
     }
 }

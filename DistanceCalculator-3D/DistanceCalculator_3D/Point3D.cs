@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DistanceCalculator_3D
 {
@@ -50,6 +46,5 @@ namespace DistanceCalculator_3D
                 return Math.Sqrt((this.X * this.X) + (this.Y * this.Y) + (this.Z * this.Z));
             }
         }
-        
     }
 }
