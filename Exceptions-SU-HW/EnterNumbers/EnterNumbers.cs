@@ -26,7 +26,7 @@ class EnterNumbers
         int number = 0;
 
         try
-        {
+        {   
             Console.WriteLine("Enter a Number between " + start + " and " + end);
             number = int.Parse(Console.ReadLine());
             if (number < start || number > end)
@@ -39,12 +39,17 @@ class EnterNumbers
         catch (FormatException ex)
         {
             Console.WriteLine("Wrong format of the number.");
+            goto Error;
         }
         catch (IndexOutOfRangeException ex)
         {
             Console.WriteLine("The number must be between start and end values and BIGGER than your previous input.");
+            goto Error;
         }
-
+        
+        Error:
+        number = ReadNumbers(start, end);
+        
         return number;
     }
 }
