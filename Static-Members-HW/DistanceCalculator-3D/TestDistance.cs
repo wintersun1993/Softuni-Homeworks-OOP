@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+	Write a static class DistanceCalculator with a static method to calculate
+	the distance between two points in the 3D space.
+	Search in Internet how to calculate distance in the 3D Euclidian space.
+*/
+
+using System;
 using DistanceCalculator_3D;
 
 class TestDistance
