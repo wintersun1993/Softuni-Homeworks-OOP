@@ -25,25 +25,22 @@ class TestGenerics
     static void Main(string[] args)
     {
         GenericList<int> arrayc = new GenericList<int>(4);
-        //add elements
+        
         arrayc.add(2);
         arrayc.add(3);
         Console.WriteLine(arrayc);
-        //check if array contains the number 3
+        
         Console.WriteLine(arrayc.contains(3));
-        //insert 14 into position 4
-        arrayc.insert(14,3);
-        arrayc.add(4);
-        arrayc.add(4);
-        arrayc.add(4);
+        
+		//insert 14 into position 4
+        arrayc.insert(14,4);
         Console.WriteLine(arrayc);
-        //Finds the Min value
+        
         Console.WriteLine("The min value is {0}",arrayc.Min());
-        //finds the Max value
         Console.WriteLine("The max value is {0}",arrayc.Max());
-        //finds the index of the number 14
-        Console.WriteLine(arrayc.FindIndex(14));
-        //clears the array
+        
+		Console.WriteLine(arrayc.FindIndex(14));
+        
         arrayc.clear();
         Console.WriteLine(arrayc);
     }
